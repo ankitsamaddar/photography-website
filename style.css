@@ -1,0 +1,81 @@
+/* Global Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Add local fonts */
+@font-face {
+  font-family: 'Ruhl';
+  src: url('fonts/FrankRuhlLibre-Regular.ttf');
+}
+@font-face {
+  font-family: 'Ruhl Medium';
+  src: url('fonts/FrankRuhlLibre-Medium.ttf');
+}
+@font-face {
+  font-family: 'Vibes';
+  src: url('fonts/GreatVibes-Regular.ttf');
+}
+
+html {
+  font-size: 62.5%;
+
+  /* Css Variables */
+  --header1: calc(2rem + 1vw);
+  --header2: calc(3.5rem + 1vw);
+  --header3: calc(3rem + 1vw);
+  --header4: calc(2.4rem + 1vw);
+  --text: calc(1.7rem + 1vw);
+  --big-text: calc(4rem + 1vw);
+
+  --main-color: #414141;
+  --accent-color: #906272;
+  --gray-text: #525252;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: var(--header1);
+}
+
+h2 {
+  font-size: var(--header2);
+}
+
+li,
+button,
+label,
+input,
+p {
+  font-size: var(--text);
+}
+
+h3 {
+  font-size: var(--header3);
+  font-weight: normal;
+}
+
+h4,
+h5 {
+  font-size: var(--header4);
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* Flex */
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
